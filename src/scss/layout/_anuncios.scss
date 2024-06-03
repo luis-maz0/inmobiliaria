@@ -1,0 +1,39 @@
+@use "../base/variables" as v; 
+@use "../base/mixins" as m; 
+
+.contenedor-anuncios{
+    @include m.tablet{
+        @include m.grid(3, 2rem)
+    }
+}
+
+.anuncio-card{
+    background-color: lighten( v.$gris, 4);
+    border: 1px solid darken(v.$gris, 10);
+    &-contenido{
+        padding: 2rem;
+    }
+    h3, p{
+        margin: 0;
+    }
+    .precio{
+        color: v.$verde;
+        font-weight: v.$bold;
+        font-size: 3rem;
+        text-align: center;
+    }
+}
+.anuncio-iconos{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    li{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        img{
+            flex-basis: 3rem;
+            margin-right: 1rem;
+        }
+    }
+}

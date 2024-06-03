@@ -22,8 +22,11 @@
     }
     h1{
         color: v.$blanco;
-        text-align: left;
+        text-align: center;
         font-weight: v.$bold;
         line-height: 2;
+        @include m.tablet{
+            text-align: left;
+        }
     }
 }
