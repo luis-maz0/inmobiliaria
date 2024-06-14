@@ -1,37 +1,58 @@
-@use "../base/variables" as v; 
-@use "../base/mixins" as m; 
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
 
-.contenedor-anuncios{
-    @include m.tablet{
+.contenedor-anuncios {
+    @include m.tablet {
         @include m.grid(3, 2rem)
     }
+    margin-bottom: 2rem;
 }
 
-.anuncio-card{
-    background-color: lighten( v.$gris, 4);
+.anuncio-card {
+    background-color: lighten(v.$gris, 4);
     border: 1px solid darken(v.$gris, 10);
-    &-contenido{
-        padding: 2rem;
-    }
-    h3, p{
+    h3,
+    p {
         margin: 0;
     }
-    .precio{
+    .precio {
         color: v.$verde;
         font-weight: v.$bold;
         font-size: 3rem;
         text-align: center;
     }
+    &-titulo{
+        min-height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-.anuncio-iconos{
+
+.anuncio-card-contenido {
+    padding: 2rem;
+    min-height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    .boton {
+        margin-top: auto;
+    }
+    
+
+}
+.anuncio-iconos {
     display: flex;
     list-style: none;
     padding: 0;
-    li{
+
+    li {
         flex: 1;
         display: flex;
         justify-content: center;
-        img{
+
+        img {
             flex-basis: 3rem;
             margin-right: 1rem;
         }

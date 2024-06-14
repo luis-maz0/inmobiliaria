@@ -1,98 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Inmobiliaria</title>
-    <link rel="stylesheet" href="build/css/app.css" />
-  </head>
-  <body>
-    <header class="header inicio">
-      <div class="contenedor contenido-header">
-        <div class="barra">
-          <a href="#">
-            <img src="build/img/logo.svg" alt="logo Inmobiliaria" />
-          </a>
-          <nav class="navegacion">
-            <a href="#">Nosotros</a>
-            <a href="#">Anuncios</a>
-            <a href="#">Blog</a>
-            <a href="#">Contacto</a>
-          </nav>
-        </div>
-        <h1>Venta de casas y departamentos</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inmobiliaria</title>
+  <link rel="stylesheet" href="build/css/app.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="header inicio">
+    <div class="contenedor contenido-header">
+      <div class="barra">
+        <a href="#">
+          <img src="build/img/logo.svg" alt="logo Inmobiliaria" />
+        </a>
+        <nav class="navegacion">
+          <a href="#">Nosotros</a>
+          <a href="#">Anuncios</a>
+          <a href="#">Blog</a>
+          <a href="#">Contacto</a>
+        </nav>
       </div>
-    </header>
+      <h1>Venta de casas y departamentos</h1>
+    </div>
+  </header>
+  <!-- FIN HEADER -->
+  <!-- ABOUT US -->
+  <main class="contenedor seccion">
+    <h1>Sobre nosotros</h1>
+    <div class="iconos-nosotros">
+      <div class="icono">
+        <img src="build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
+        <h3>seguridad</h3>
+        <p class="icono-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed qui incidunt natus minima
+          iure amet dolorum porro reprehenderit, voluptatibus fugit maxime assumenda tempora nulla. Cupiditate,
+          obcaecati doloribus. Dolore, cum provident!</p>
+      </div>
+      <div class="icono">
+        <img src="build/img/icono2.svg" alt="Icono seguridad" loading="lazy">
+        <h3>precio</h3>
+        <p class="icono-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed qui incidunt natus minima
+          iure amet dolorum porro reprehenderit, voluptatibus fugit maxime assumenda tempora nulla. Cupiditate,
+          obcaecati doloribus. Dolore, cum provident!</p>
+      </div>
+      <div class="icono">
+        <img src="build/img/icono3.svg" alt="Icono seguridad" loading="lazy">
+        <h3>tiempo</h3>
+        <p class="icono-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed qui incidunt natus minima
+          iure amet dolorum porro reprehenderit, voluptatibus fugit maxime assumenda tempora nulla. Cupiditate,
+          obcaecati doloribus. Dolore, cum provident!</p>
+      </div>
+    </div>
+  </main>
+  <!--FIN ABOUT US -->
+  <!-- ANUNCIOS -->
+  <section class="contenedor seccion">
+    <h2>Casas y dptos en venta</h2>
+    <!-- CONTENEDOR ANUNCIOS -->
+    <div class="contenedor-anuncios">
+      <!-- CARD ANUNCIO -->
+      <div class="anuncio-card">
+        <picture>
+          <source srcset="build/img/anuncio1.avif" type="image/avif">
+          <source srcset="build/img/anuncio1.webp" type="image/webp">
+          <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
+          <img src="build/img/anuncio1.jpg" alt="anuncio">
+        </picture>
+        <div class="anuncio-card-contenido">
+          <div class="anuncio-card-titulo">
+            <h3>Casa frente al lago</h3>
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, doloremque?</p>
+          <p class="precio">500.000 USD</p>
 
-      <main class="contenedor seccion">
-        <h1>Sobre nosotros</h1>
-        <div class="iconos-nosotros">
-          <div class="icono">
-            <img src="build/img/icono1.svg" alt="Icono seguridad" loading="lazy">
-            <h3>seguridad</h3>
-            <p class="icono-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed qui incidunt natus minima iure amet dolorum porro reprehenderit, voluptatibus fugit maxime assumenda tempora nulla. Cupiditate, obcaecati doloribus. Dolore, cum provident!</p>
-          </div>
-          <div class="icono">
-            <img src="build/img/icono2.svg" alt="Icono seguridad" loading="lazy">
-            <h3>precio</h3>
-            <p class="icono-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed qui incidunt natus minima iure amet dolorum porro reprehenderit, voluptatibus fugit maxime assumenda tempora nulla. Cupiditate, obcaecati doloribus. Dolore, cum provident!</p>
-          </div>
-          <div class="icono">
-            <img src="build/img/icono3.svg" alt="Icono seguridad" loading="lazy">
-            <h3>tiempo</h3>
-            <p class="icono-texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed qui incidunt natus minima iure amet dolorum porro reprehenderit, voluptatibus fugit maxime assumenda tempora nulla. Cupiditate, obcaecati doloribus. Dolore, cum provident!</p>
-          </div>
+          <ul class="anuncio-iconos">
+            <li>
+              <img loading="lazy" src="build/img/icono_wc.svg" alt="icono banios">
+              <p>3</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+              <p>1</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono cuartos">
+              <p>4</p>
+            </li>
+          </ul>
+          <a href="anuncio.html" class="boton boton-amarillo">
+            + información
+          </a>
         </div>
-      </main>
-
-      <section class="contenedor seccion">
-        <h2>Casas y dptos en venta</h2>
-        <div class="contenedor-anuncios">
-          <div class="anuncio-card">
-            <picture>
-              <source srcset="build/img/anuncio1.avif" type="image/avif">
-              <source srcset="build/img/anuncio1.webp" type="image/webp">
-              <source srcset="build/img/anuncio1.jpg" type="image/jpeg">
-              <img src="build/img/anuncio1.jpg" alt="anuncio">
-            </picture>
-            <div class="anuncio-card-contenido">
-              <h3>Casa frente al lago</h3>
-              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, doloremque?</p>
-              <p class="precio">500.000 USD</p>
-
-              <ul class="anuncio-iconos">
-                <li>
-                  <img loading="lazy" src="build/img/icono_wc.svg" alt="icono banios">
-                  <p>3</p>  
-                </li>
-                <li>
-                  <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
-                  <p>1</p>  
-                </li>
-                <li>
-                  <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono cuartos">
-                  <p>4</p>  
-                </li>
-              </ul>
-              <a href="anuncio.html" class="boton boton-color"> 
-                + información
-              </a>
-            </div>
+      </div>
+      <!-- FIN CARD ANUNCIO -->
+      <!-- CARD ANUNCIO -->
+      <div class="anuncio-card">
+        <picture>
+          <source srcset="build/img/anuncio2.avif" type="image/avif">
+          <source srcset="build/img/anuncio2.webp" type="image/webp">
+          <source srcset="build/img/anuncio2.jpg" type="image/jpeg">
+          <img src="build/img/anuncio2.jpg" alt="anuncio">
+        </picture>
+        <div class="anuncio-card-contenido">
+          <div class="anuncio-card-titulo">
+            <h3>Casa moderna</h3>
           </div>
-        </div>
-      </section>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, doloremque?</p>
+          <p class="precio">500.000 USD</p>
 
-      <footer class="footer section">
-        <div class="contenedor contenido-footer">
-            <nav class="navegacion">
-                <a href="#">Nosotros</a>
-                <a href="#">Anuncios</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
-            </nav>
-            <p class="copyright">Todos los derechos reservados 2024 &copy;</p>
+          <ul class="anuncio-iconos">
+            <li>
+              <img loading="lazy" src="build/img/icono_wc.svg" alt="icono banios">
+              <p>3</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+              <p>1</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono cuartos">
+              <p>4</p>
+            </li>
+          </ul>
+          <a href="anuncio.html" class="boton boton-amarillo">
+            + información
+          </a>
         </div>
-      </footer>
-      <script src="build/js/bundle.min.js"></script>
-  </body>
+      </div>
+      <!-- FIN CARD ANUNCIO -->
+      <!-- CARD ANUNCIO -->
+      <div class="anuncio-card">
+        <picture>
+          <source srcset="build/img/anuncio3.avif" type="image/avif">
+          <source srcset="build/img/anuncio3.webp" type="image/webp">
+          <source srcset="build/img/anuncio3.jpg" type="image/jpeg">
+          <img src="build/img/anuncio3.jpg" alt="anuncio">
+        </picture>
+        <div class="anuncio-card-contenido">
+
+          <div class="anuncio-card-titulo">
+            <h3>Casa con amplia piscina</h3>
+          </div>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, doloremque?</p>
+          <p class="precio">500.000 USD</p>
+
+          <ul class="anuncio-iconos">
+            <li>
+              <img loading="lazy" src="build/img/icono_wc.svg" alt="icono banios">
+              <p>3</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_estacionamiento.svg" alt="icono estacionamiento">
+              <p>1</p>
+            </li>
+            <li>
+              <img loading="lazy" src="build/img/icono_dormitorio.svg" alt="icono cuartos">
+              <p>4</p>
+            </li>
+          </ul>
+          <a href="anuncio.html" class="boton boton-amarillo">
+            + información
+          </a>
+        </div>
+      </div>
+      <!-- FIN CARD ANUNCIO -->
+    </div>
+    <!-- FIN CONTENEDOR ANUNCIOS -->
+     <div class="alinear-derecha">
+      <a href="anuncios.html" class="boton-verde">Ver mas</a>
+     </div>
+  </section>
+  <!-- FIN ANUNCIOS -->
+
+  <footer class="footer section">
+    <div class="contenedor contenido-footer">
+      <nav class="navegacion">
+        <a href="#">Nosotros</a>
+        <a href="#">Anuncios</a>
+        <a href="#">Blog</a>
+        <a href="#">Contacto</a>
+      </nav>
+      <p class="copyright">Todos los derechos reservados 2024 &copy;</p>
+    </div>
+  </footer>
+  <script src="build/js/bundle.min.js"></script>
+</body>
+
 </html>

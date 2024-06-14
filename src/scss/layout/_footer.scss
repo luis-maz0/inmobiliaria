@@ -1,5 +1,6 @@
 @use "../base/variables" as v;
 .footer{
+    margin-top: 2rem;
     background-color: v.$grisOscuro;
     padding: calc(v.$separacion/2) 0;
 
