@@ -1,0 +1,19 @@
+@use "../base/variables" as v;
+
+.imagen-contacto{
+    background-image: url("../../../build/img/encuentra.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: v.$separacion 0;
+    color: v.$blanco;
+    h2{
+        font-weight: v.$bold;
+        font-size: 3.5rem;
+    }
+    p{
+        font-size: 1.5rem;
+        color: inherit;
+    }
+}
