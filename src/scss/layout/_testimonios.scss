@@ -1,0 +1,16 @@
+@use "../base/mixins" as m; 
+@use "../base/variables" as v; 
+
+.testimonio{
+    background-color: v.$verde;
+    color: v.$blanco;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.testimonio-autor{
+    text-align: right;
+    color: v.$blanco;
+    font-size: v.$bold;
+    padding-right: 2rem;
+}
