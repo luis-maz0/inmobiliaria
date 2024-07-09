@@ -9,7 +9,7 @@
         background-position: center;
         background-size: cover;
         @include m.tablet{
-            min-height: 60rem;
+            min-height: 40rem;
         }
     }
 }
@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: space-between;
     @include m.tablet{
-        min-height: 60rem;
+        min-height: 40rem;
     }
     h1{
         color: v.$blanco;

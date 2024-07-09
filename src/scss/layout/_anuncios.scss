@@ -15,12 +15,6 @@
     p {
         margin: 0;
     }
-    .precio {
-        color: v.$verde;
-        font-weight: v.$bold;
-        font-size: 3rem;
-        text-align: center;
-    }
     &-titulo{
         min-height: 10rem;
         display: flex;
@@ -28,7 +22,12 @@
         justify-content: center;
     }
 }
-
+.precio {
+    color: v.$verde;
+    font-weight: v.$bold;
+    font-size: 3rem;
+    text-align: center;
+}
 .anuncio-card-contenido {
     padding: 2rem;
     min-height: 50rem;
