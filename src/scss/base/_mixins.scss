@@ -30,7 +30,9 @@
     padding: 1rem 3rem;
     text-align: center;
     margin-top: calc( (v.$separacion) / 2 );
+    border: none;
     &:hover{
         background-color: darken($bgColor, 5);
+        cursor: pointer;
     }
 }

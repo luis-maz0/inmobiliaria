@@ -19,6 +19,11 @@
         margin-bottom: 0;
     }
 }
+.informacion-meta{
+    span{
+        color: v.$amarillo;
+    }
+}
 .entrada-blog-texto{
     h4{
         @include m.tablet{
@@ -42,9 +47,7 @@
         max-height: 13rem;
         overflow: hidden;
     }
-    span{
-        color: v.$amarillo;
-    }
+   
 }
 .entrada-blog-img{
     img, picture{
