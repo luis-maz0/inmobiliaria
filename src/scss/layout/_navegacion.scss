@@ -12,11 +12,16 @@
     }
 }
 .navegacion{
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .3s ease-in-out, opacity .3s ease-in-out;
+
     @include m.tablet{
         display: flex;
         align-items: center;
         gap: 2rem;
+        visibility: visible;
+        opacity: 1;
     }
     a{
         color: v.$blanco;
@@ -36,9 +41,6 @@
     }
 }
 .mostrar{
-    display: flex;
-    flex-direction: column;
-    @include m.tablet{
-        flex-direction: row;
-    }
+   visibility: visible;
+   opacity: 1;
 }
