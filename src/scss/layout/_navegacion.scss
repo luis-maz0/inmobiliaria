@@ -4,12 +4,15 @@
 .barra{
     display: flex;
     flex-direction: column;
+    align-items: center;
+
     @include m.tablet{
         flex-direction: row;
         justify-content: space-between;
     }
 }
 .navegacion{
+    display: none;
     @include m.tablet{
         display: flex;
         align-items: center;
@@ -21,5 +24,21 @@
         font-size: 2rem;
         display: block;
         text-align: center;
+    }
+}
+//Menu hamburguesa
+.mobile-menu{
+    @include m.tablet{
+        display: none;
+    }
+    img{
+        width: 5rem;
+    }
+}
+.mostrar{
+    display: flex;
+    flex-direction: column;
+    @include m.tablet{
+        flex-direction: row;
     }
 }

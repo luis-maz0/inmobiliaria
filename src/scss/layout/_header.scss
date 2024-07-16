@@ -16,7 +16,7 @@
 .contenido-header{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     @include m.tablet{
         min-height: 40rem;
     }
