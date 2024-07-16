@@ -1,37 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+  <?php
+    $inicio = true; 
+    include "./includes/templates/header.php";
+  ?>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inmobiliaria</title>
-  <link rel="stylesheet" href="build/css/app.css" />
-</head>
-
-<body>
-  <!-- HEADER -->
-  <header class="header inicio">
-    <div class="contenedor contenido-header">
-      <div class="barra">
-        <a href="index.html">
-          <img src="build/img/logo.svg" alt="logo Inmobiliaria" />
-        </a>
-
-        <div class="mobile-menu">
-          <img src="build/img/barras.svg" alt="icono menu responsive"/>
-        </div>
-
-        <nav class="navegacion">
-          <a href="nosotros.html">Nosotros</a>
-          <a href="anuncios.html">Anuncios</a>
-          <a href="blog.html">Blog</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-      </div>
-      <h1>Venta de casas y departamentos</h1>
-    </div>
-  </header>
-  <!-- FIN HEADER -->
   <!-- ABOUT US -->
   <main class="contenedor seccion">
     <h1>Sobre nosotros</h1>

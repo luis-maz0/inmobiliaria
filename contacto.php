@@ -1,38 +1,11 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Inmobiliaria</title>
-  <link rel="stylesheet" href="build/css/app.css" />
-</head>
-
-<body>
-  <!-- HEADER -->
-  <header class="header inicio">
-    <div class="contenedor contenido-header">
-      <div class="barra">
-        <a href="index.html">
-          <img src="build/img/logo.svg" alt="logo Inmobiliaria" />
-        </a>
-        <nav class="navegacion">
-          <a href="nosotros.html">Nosotros</a>
-          <a href="anuncios.html">Anuncios</a>
-          <a href="blog.html">Blog</a>
-          <a href="contacto.html">Contacto</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- FIN HEADER -->
+<?php
+    include "./includes/templates/header.php";
+  ?>
   <!-- ABOUT US -->
   <main class="contenedor seccion contenido-centrado">
     <h1>Contacto</h1>
     <picture>
-        <source srcset="build/img/destacada3.avif" type="image/avif"/>
-        <source srcset="build/img/destacada3.webp" type="image/webp"/>
-        <img loading="lazy" src="build/img/destacada3.jpg" alt="imagen contacto">
+        <img src="/build/img/destacada3.webp" alt="imagen contacto"/>
     </picture>
     <h2>Formulario de contacto</h2>
     <form class="formulario" action="">
